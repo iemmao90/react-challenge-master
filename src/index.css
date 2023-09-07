@@ -11,14 +11,18 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 
-  --primary-color: #5754F9;
-  --accent-color: #F44599;
-  --success-color: #20D287;
-  --danger-color: #FF4259;
+  --paid-color: #5754f9;
+  --pending-color: #f44599;
+  --shipped-color: #20d287;
+  --cancelled-color: #ff4259;
 }
 
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 1rem;
+}
+
+ul {
+  list-style: none;
 }

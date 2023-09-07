@@ -1,13 +1,23 @@
-import { PropsWithChildren } from 'react'
+import { PropsWithChildren } from 'react';
+import './Button.css';
 
 export interface ButtonProps {
-  variant?: 'primary' | 'accent' | 'success' | 'danger'
+  variant?: 'shipped' | 'pending' | 'paid' | 'cancelled';
+  onClick?: () => void;
 }
 
-export function Button({ children }: PropsWithChildren<ButtonProps>) {
-  /**
-   * TODO: Implement the Button component.
-   */
+export function Button({
+  children,
+  onClick,
+  variant = 'pending',
+}: PropsWithChildren<ButtonProps>) {
+  const buttonStyle = {
+    backgroundColor: `var(--${variant}-color)`,
+  };
 
-  return <>{children}</>
+  return (
+    <button className="color-button" style={buttonStyle} onClick={onClick}>
+      {children}
+    </button>
+  );
 }

@@ -36,6 +36,9 @@ Det är din första dag på Quickbutik och du har just blivit ägare av detta re
     - Knapp (**din egna knapp-komponent**) för att gå till ordern (_När man trycker på knappen ska en alert med ordernummer visas_)
 - Svara på följande frågor:
   - Vad hade du gjort (extra?, annorlunda?) om du hade fått mycket mer tid?
+  - Jag hade byggt om interface för ApiOrders så att det matchat JSON-objektet.
+  - Skapat en list-komponent för att enklare kunna återanvända koden.
+  - Gjort ett snyggare UI som matchar Quickbutiks bättre.
 
 ## När du är klar
 
